@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/HW10_20_22.dir/main.cpp.o -c /home/joseph/Documents/CDS_241/HW2/HW10_20_22/main.cpp",
+  "file": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/main.cpp"
+},
+{
+  "directory": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/HW10_20_22.dir/log.cpp.o -c /home/joseph/Documents/CDS_241/HW2/HW10_20_22/log.cpp",
+  "file": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/log.cpp"
+},
+{
+  "directory": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/HW10_20_22.dir/log_list.cpp.o -c /home/joseph/Documents/CDS_241/HW2/HW10_20_22/log_list.cpp",
+  "file": "/home/joseph/Documents/CDS_241/HW2/HW10_20_22/log_list.cpp"
+}
+]
