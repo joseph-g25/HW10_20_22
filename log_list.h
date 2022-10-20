@@ -3,17 +3,19 @@
 
 #include <string>
 #include <vector>
+
 #include "log.h"
 
 /**
- * @brief Contain a list of all Log objects gathered.
+ * @brief Contain a list of Log objects.
  * 
  */
 class Log_List
 {
 public:
     // CONSTRUCTORS
-    Log_List() = default;
+
+    Log_List() = default; // default constructor
 
     /**
      * @brief Construct a new Log_List::Log_List object
@@ -30,15 +32,17 @@ public:
 //    Log_List(vector<Log>&);
 
     // MISC PUBLIC MEMBER FUNCTIONS
-    Log_List& add_log(Log&);
-    Log get_nth_member(int);
-    size_t get_size();
+
+    Log_List& add_log(Log&); // add a log
+    Log get_nth_member(int); // get nth member of loglist
+    size_t get_size(); // get size of loglist
     
     // assignment functions
+
     Log_List filter_by_name(const std::string&);
     Log_List& prune_by_date(const std::string&);
 private:
-    std::vector<Log> log_list;
+    std::vector<Log> logs;
 
 };
 

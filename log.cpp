@@ -1,20 +1,34 @@
 #include <string>
 #include <iostream>
+#include <sstream>
 
 #include "log.h"
 
 using namespace std;
 
 string Log::to_string() {
-    string ret = this->date + ":" + this->time + ":" 
-                + this->username + ":" + this->ip + ":";
-    if (this->success) {
-        ret = ret + "true";
+//    string ret = this->date + ":" + this->time + ":" 
+//                + this->username + ":" + this->ip + ":";
+//    if (this->success) {
+//        ret = ret + "true";
+//    }
+//    else {
+//        ret = ret + "false";
+//    }
+//    return ret;
+
+    ostringstream oss;
+    oss << date << ':' << time << ':' << username << ':' << ip << ':';
+
+    if (this->success)
+    {
+        oss << "true";
+    }  else
+    {
+        oss << "false";
     }
-    else {
-        ret = ret + "false";
-    }
-    return ret;
+
+    return oss.str();
 }
 
 Log::Log(string str_in)

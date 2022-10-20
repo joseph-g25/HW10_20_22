@@ -2,16 +2,12 @@
 #define LOG_H_
 #include <string>
 
+/**
+ * @brief Contains a single instance of login attempt information.
+ * 
+ */
 class Log {
 public:
-    /**
-     * @brief extract the data for this log object from the
-     * string
-     * 
-     * @param str a string formatted as in our log files. 
-     */
-
-
     // CONSTRUCTORS
     Log() = default;    // because we are defining other constructors, we must define the default constructor as well since the compiler will not
                         // do so with the presence of other constructors.
@@ -28,6 +24,7 @@ public:
      * returns a textual representation of this Log object
     */
     std::string to_string();
+
     // INLINE FUNCS
     std::string get_date() const;
     std::string get_time() const;
